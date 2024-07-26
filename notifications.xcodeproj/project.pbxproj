@@ -14,6 +14,7 @@
 		FBD2CBDF2BB49AAA00FBE456 /* notificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2CBDE2BB49AAA00FBE456 /* notificationsTests.swift */; };
 		FBD2CBE92BB49AAA00FBE456 /* notificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2CBE82BB49AAA00FBE456 /* notificationsUITests.swift */; };
 		FBD2CBEB2BB49AAA00FBE456 /* notificationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2CBEA2BB49AAA00FBE456 /* notificationsUITestsLaunchTests.swift */; };
+		FBD2CBF82BB49B0F00FBE456 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2CBF72BB49B0F00FBE456 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		FBD2CBE42BB49AAA00FBE456 /* notificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = notificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD2CBE82BB49AAA00FBE456 /* notificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsUITests.swift; sourceTree = "<group>"; };
 		FBD2CBEA2BB49AAA00FBE456 /* notificationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBD2CBF72BB49B0F00FBE456 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				FBD2CBD02BB49AA900FBE456 /* Assets.xcassets */,
 				FBD2CBD22BB49AA900FBE456 /* notifications.entitlements */,
 				FBD2CBD32BB49AA900FBE456 /* Preview Content */,
+				FBD2CBF72BB49B0F00FBE456 /* Notifications.swift */,
 			);
 			path = notifications;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD2CBF82BB49B0F00FBE456 /* Notifications.swift in Sources */,
 				FBD2CBCF2BB49AA500FBE456 /* ContentView.swift in Sources */,
 				FBD2CBCD2BB49AA500FBE456 /* notificationsApp.swift in Sources */,
 			);

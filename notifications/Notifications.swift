@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Notifications.swift
 //  notifications
 //
 //  Created by Aaron Djangmah on 27/03/2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 import UserNotifications
 
-struct ContentView: View {
+struct Notifications: View {
     @State private var authorization = false
     
     func authorizationAccess() {
@@ -28,34 +28,34 @@ struct ContentView: View {
         content.sound = .default
         
         let identifier = UUID().uuidString
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: true)
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request)
     }
+    
     var body: some View {
         VStack{
-            Image(systemName:"bell")
-                .resizable()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
-                .padding()
-            
-            if authorization {
-                Button("Send Notification") {
-                    scheduleNotif()
-                }.buttonStyle(.bordered)
-            }
             
         }.onAppear{
             authorizationAccess()
         }
         
-       
+        Image(systemName:"bell")
+            .resizable()
+            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
+            .padding()
+        
+        if authorization {
+            Button("Send Notification") {
+                scheduleNotif()
+            }.buttonStyle(.bordered)
+        }
+        
         
     }
 }
 
-
 #Preview {
-    ContentView()
+    Notifications()
 }
